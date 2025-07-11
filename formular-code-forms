@@ -1,0 +1,50 @@
+<h3>1. Angaben zur Haltestelle:</h3>
+
+<label> Name der Haltestelle:<br>
+[text* haltestelle-name] </label>
+
+<label> Ort / Stadtteil:<br>
+[text* ort] </label>
+
+<label> Richtung / Fahrtrichtung:<br>
+[select* richtung include_blank "SE (Stadteinwärts)" "SA (Stadtauswärts)"] </label>
+
+<h3>2. Beschreibung des Mangels:</h3>
+
+<label> [checkbox* mangelarten use_label_element 
+    "Beschädigte Haltestelleneinrichtung (z. B. Schild, Sitzbank, Wartehäuschen)" 
+    "Fehlende oder beschädigte Fahrpläne"
+    "Veraltete oder fehlerhafte Fahrplaninformationen"
+    "Verschmutzung / Vandalismus"
+    "Beleuchtung defekt"
+    "Barrierefreiheit eingeschränkt"
+    "Sonstiges"] </label>
+
+<label> Genaue Beschreibung:<br>
+[textarea* mangelbeschreibung] </label>
+
+<h3>3. Datum und Uhrzeit der Feststellung:</h3>
+
+<label> Datum:<br>
+[date* feststellungsdatum] </label>
+
+<label> Uhrzeit:<br>
+[text* feststellungszeit placeholder "z. B. 14:30"] </label>
+
+<h3>4. Kontaktdaten:</h3>
+
+<label> Name:<br>
+[text* dein-name] </label>
+
+<label> E-Mail-Adresse:<br>
+[email* deine-email] </label>
+
+<label> Adresse:<br>
+[text deine-adresse] </label>
+
+<label> Webseite (optional):<br>
+[url deine-webseite] </label>
+
+[acceptance akzeptanz] Ich akzeptiere die Verarbeitung meiner Angaben zur Bearbeitung meines Anliegens.
+
+[submit "Absenden"]
